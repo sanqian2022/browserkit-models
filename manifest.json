@@ -1,0 +1,46 @@
+{
+  "manifestVersion": 1,
+  "package": "browserkit-models",
+  "version": "1.0.0",
+  "note": "Byte counts and hashes are verified in the browser after download; a mismatch means the CDN served the wrong bytes.",
+  "models": {
+    "slimsam-77-vision-encoder": {
+      "parts": [
+        {
+          "path": "models/slimsam-77-vision-encoder-quantized.onnx",
+          "bytes": 8882165,
+          "sha256": "cce23c7b2e5d4f330932738fb67ba518e04b0d99ccdd1cccd22a7da4e01f2971"
+        }
+      ],
+      "bytes": 8882165,
+      "sha256": "cce23c7b2e5d4f330932738fb67ba518e04b0d99ccdd1cccd22a7da4e01f2971"
+    },
+    "slimsam-77-decoder": {
+      "parts": [
+        {
+          "path": "models/slimsam-77-decoder-quantized.onnx",
+          "bytes": 4903810,
+          "sha256": "cb90b279f549d2cab7fd6e20c38522438c65d84bdcca3d2a764cff7d857fdce2"
+        }
+      ],
+      "bytes": 4903810,
+      "sha256": "cb90b279f549d2cab7fd6e20c38522438c65d84bdcca3d2a764cff7d857fdce2"
+    },
+    "migan-512-places2": {
+      "parts": [
+        {
+          "path": "models/migan-512-places2.part1.onnx",
+          "bytes": 14039590,
+          "sha256": "e7847ac71128347035689b0100f29459cb00c6237ac9aff9e4924994dfee50ee"
+        },
+        {
+          "path": "models/migan-512-places2.part2.onnx",
+          "bytes": 14039591,
+          "sha256": "f0e4850762d24a2c5a6906d562db3d9a362d54e4e1243f220e50a0bf3970a6de"
+        }
+      ],
+      "bytes": 28079181,
+      "sha256": "6f1f3530a1a2324b19752018ce756088b07973cda8d7d890034ace5c8a48c40b"
+    }
+  }
+}

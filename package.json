@@ -1,0 +1,26 @@
+{
+  "name": "browserkit-models",
+  "version": "1.0.0",
+  "description": "ONNX models used by BrowserKit's browser-only image tools, split into CDN-friendly parts with a checksum manifest.",
+  "license": "Apache-2.0 AND MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanqian2022/browserkit-models.git"
+  },
+  "homepage": "https://github.com/sanqian2022/browserkit-models#readme",
+  "keywords": [
+    "onnx",
+    "slimsam",
+    "segment-anything",
+    "migan",
+    "inpainting",
+    "browser",
+    "wasm"
+  ],
+  "files": [
+    "models",
+    "LICENSES",
+    "manifest.json",
+    "README.md"
+  ]
+}

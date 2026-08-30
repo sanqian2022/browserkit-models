@@ -1,0 +1,37 @@
+MI-GAN-512-Places2 ONNX inference pipeline.
+
+Files (a single 26.78 MB ONNX file split in two, joined in the browser, because
+the deploy target rejects any file over 25 MiB):
+  migan-512-places2.part1.onnx
+  migan-512-places2.part2.onnx
+
+Source: https://huggingface.co/andraniksargsyan/migan (migan_pipeline_v2.onnx),
+published by the paper's first author and linked from the project README as the
+pre-converted pipeline for application use.
+Project: https://github.com/Picsart-AI-Research/MI-GAN
+Paper: MI-GAN: A Simple Baseline for Image Inpainting on Mobile Devices,
+Sargsyan, Navasardyan, Xu, Shi - ICCV 2023 (arXiv:2312.05284)
+
+License: MIT
+
+MIT License
+
+Copyright (c) 2024 Picsart AI Research (PAIR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

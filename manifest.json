@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "package": "browserkit-models",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "note": "Byte counts and hashes are verified in the browser after download; a mismatch means the CDN served the wrong bytes.",
   "models": {
     "slimsam-77-vision-encoder": {
@@ -41,6 +41,27 @@
       ],
       "bytes": 28079181,
       "sha256": "6f1f3530a1a2324b19752018ce756088b07973cda8d7d890034ace5c8a48c40b"
+    },
+    "isnet-general-int8": {
+      "parts": [
+        {
+          "path": "models/isnet-general-int8.part1.onnx",
+          "bytes": 14743221,
+          "sha256": "5e7132cfed7ee24dc47e33df29c45efbc9ef3fc41d5302a092a1f48305cb3cdc"
+        },
+        {
+          "path": "models/isnet-general-int8.part2.onnx",
+          "bytes": 14743221,
+          "sha256": "18b46925566be2989944e8235181692419b05273f79c77908e8c38ff11332f63"
+        },
+        {
+          "path": "models/isnet-general-int8.part3.onnx",
+          "bytes": 14743220,
+          "sha256": "9930a065a334f0acbae03cd0362687611df5c7e477e274a07fbbeaae100eb715"
+        }
+      ],
+      "bytes": 44229662,
+      "sha256": "3b21a6706dc8d6e4ba9f5b31ebc6940f6c785b58862e27bb25daa9dd4424b87f"
     }
   }
 }

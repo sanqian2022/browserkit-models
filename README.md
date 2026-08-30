@@ -8,9 +8,9 @@ Nothing here is code. It is model weights, a checksum manifest, and the upstream
 
 ## Why the files are split
 
-`migan-512-places2` is a single 26.78 MB ONNX file upstream. It is stored here as two ~13.4 MB parts
-because CDNs apply per-file size limits, and because the deploy target of the consuming site rejects
-any single file over 25 MiB. The consumer downloads the parts in parallel and joins them in order.
+Upstream, `migan-512-places2` is a single 26.78 MB file and `isnet-general-int8` a single 42.18 MB
+file. Both are stored here in parts of about 14 MB because CDNs apply per-file size limits. The
+consumer downloads the parts in parallel and joins them in order.
 
 `manifest.json` records, for every model, each part's path and byte count plus the SHA-256 of both the
 individual parts and the joined result. The consumer verifies these after downloading, so a CDN that
@@ -25,12 +25,15 @@ used to find a reachable CDN quickly.
 | `slimsam-77-vision-encoder` | 1 | 8.47 MiB | [Xenova/slimsam-77-uniform](https://huggingface.co/Xenova/slimsam-77-uniform) | Apache-2.0 |
 | `slimsam-77-decoder` | 1 | 4.68 MiB | same | Apache-2.0 |
 | `migan-512-places2` | 2 | 26.78 MiB | [andraniksargsyan/migan](https://huggingface.co/andraniksargsyan/migan) | MIT |
+| `isnet-general-int8` | 3 | 42.18 MiB | [xrds/isnet-general-onnx-int8](https://huggingface.co/xrds/isnet-general-onnx-int8) | MIT |
 
 Full licence texts, with attribution and paper references, are in `LICENSES/`.
 
-RMBG-1.4 is deliberately **not** here. It is released under the `bria-rmbg-1.4` licence, which is
-source-available for non-commercial use only, so redistributing its weights is not permitted.
-Consumers must fetch it from BRIA's own repository.
+`isnet-general-int8` replaced RMBG-1.4 for background matting. RMBG-1.4 is released under the
+`bria-rmbg-1.4` licence, which is source-available for non-commercial use only and does not permit
+redistribution, so it could never be served from here; that made the feature unusable on networks
+where huggingface.co is blocked. IS-Net is the architecture RMBG-1.4 was fine-tuned from, is the same
+size once quantized, runs at the same speed, and is MIT licensed.
 
 ## How the files are addressed
 
@@ -38,10 +41,10 @@ The layout is chosen so the same relative path works whether the files are serve
 repository or from the npm package built from it. Only the base URL changes:
 
 ```
-https://cdn.jsdelivr.net/gh/sanqian2022/browserkit-models@models-v1/models/<file>
-https://registry.npmmirror.com/browserkit-models/1.0.0/files/models/<file>
-https://unpkg.com/browserkit-models@1.0.0/models/<file>
-https://cdn.jsdelivr.net/npm/browserkit-models@1.0.0/models/<file>
+https://cdn.jsdelivr.net/gh/sanqian2022/browserkit-models@models-v2/models/<file>
+https://registry.npmmirror.com/browserkit-models/1.1.0/files/models/<file>
+https://unpkg.com/browserkit-models@1.1.0/models/<file>
+https://cdn.jsdelivr.net/npm/browserkit-models@1.1.0/models/<file>
 ```
 
 Always address an immutable reference: a git tag for the jsDelivr `/gh/` form, an exact version for
@@ -53,7 +56,7 @@ different revisions, which the manifest would then reject.
 1. Replace the files under `models/`, keeping parts at or below 15 MB.
 2. Regenerate `manifest.json` so the byte counts and hashes match.
 3. Bump `version` in `package.json` and `manifest.json`.
-4. Commit, push, then create and push a new tag (`models-v2`, and so on).
+4. Commit, push, then create and push a new tag (`models-v3`, and so on).
 5. Point the consuming site at the new tag or version. Old tags keep working, so a deployed site is
    never broken by an update here.
 

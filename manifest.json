@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "package": "browserkit-models",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "note": "Byte counts and hashes are verified in the browser after download; a mismatch means the CDN served the wrong bytes.",
   "models": {
     "slimsam-77-vision-encoder": {
@@ -62,6 +62,22 @@
       ],
       "bytes": 44229662,
       "sha256": "3b21a6706dc8d6e4ba9f5b31ebc6940f6c785b58862e27bb25daa9dd4424b87f"
+    },
+    "resnet50-v1-7-int8": {
+      "parts": [
+        {
+          "path": "models/resnet50-v1-7-int8.part1.onnx",
+          "bytes": 15000000,
+          "sha256": "554834efa5aca3be87e56ac651e4dec922796b5553091d343d1b766455991de5"
+        },
+        {
+          "path": "models/resnet50-v1-7-int8.part2.onnx",
+          "bytes": 11144269,
+          "sha256": "66217479918b4f582fa2f1520f16a24053384f7988ac8046504a600157d98723"
+        }
+      ],
+      "bytes": 26144269,
+      "sha256": "8787ae27001c70bad8f99a351507c5fa418a78161e1cf1dee91698586d9ac0a6"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "package": "browserkit-models",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "note": "Byte counts and hashes are verified in the browser after download; a mismatch means the CDN served the wrong bytes.",
   "models": {
     "slimsam-77-vision-encoder": {
@@ -78,6 +78,17 @@
       ],
       "bytes": 26144269,
       "sha256": "8787ae27001c70bad8f99a351507c5fa418a78161e1cf1dee91698586d9ac0a6"
+    },
+    "realesr-general-x4v3": {
+      "parts": [
+        {
+          "path": "models/realesr-general-x4v3.onnx",
+          "bytes": 4866417,
+          "sha256": "1940a93ee08283a0a7286183186357b1688fe9fa8ede74604b424586aaddf112"
+        }
+      ],
+      "bytes": 4866417,
+      "sha256": "1940a93ee08283a0a7286183186357b1688fe9fa8ede74604b424586aaddf112"
     }
   }
 }

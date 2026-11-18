@@ -11,7 +11,7 @@ Nothing here is code. It is model weights, a checksum manifest, and the upstream
 Upstream, `migan-512-places2` is a single 26.78 MB file, `isnet-general-int8` a single 42.18 MB
 file, and `resnet50-v1-7-int8` a single 24.93 MB file. They are stored here in parts of about
 14-15 MB because CDNs apply per-file size limits. The consumer downloads the parts in parallel and
-joins them in order.
+joins them in order. `realesr-general-x4v3` (4.64 MiB) is small enough to stay a single file.
 
 `manifest.json` records, for every model, each part's path and byte count plus the SHA-256 of both the
 individual parts and the joined result. The consumer verifies these after downloading, so a CDN that
@@ -28,6 +28,7 @@ used to find a reachable CDN quickly.
 | `migan-512-places2` | 2 | 26.78 MiB | [andraniksargsyan/migan](https://huggingface.co/andraniksargsyan/migan) | MIT |
 | `isnet-general-int8` | 3 | 42.18 MiB | [xrds/isnet-general-onnx-int8](https://huggingface.co/xrds/isnet-general-onnx-int8) | MIT |
 | `resnet50-v1-7-int8` | 2 | 24.93 MiB | [onnx/models ResNet50 v1](https://github.com/onnx/models/tree/main/validated/vision/classification/resnet) | Apache-2.0 |
+| `realesr-general-x4v3` | 1 | 4.64 MiB | [Real-ESRGAN v0.2.5.0 weights](https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.2.5.0), ONNX export by [CoderViking](https://huggingface.co/CoderViking/realesr-general-x4v3-onnx) | BSD-3-Clause |
 
 Full licence texts, with attribution and paper references, are in `LICENSES/`.
 
@@ -44,9 +45,9 @@ repository or from the npm package built from it. Only the base URL changes:
 
 ```
 https://cdn.jsdelivr.net/gh/sanqian2022/browserkit-models@models-v3/models/<file>
-https://registry.npmmirror.com/browserkit-models/1.2.0/files/models/<file>
-https://unpkg.com/browserkit-models@1.2.0/models/<file>
-https://cdn.jsdelivr.net/npm/browserkit-models@1.2.0/models/<file>
+https://registry.npmmirror.com/browserkit-models/1.3.0/files/models/<file>
+https://unpkg.com/browserkit-models@1.3.0/models/<file>
+https://cdn.jsdelivr.net/npm/browserkit-models@1.3.0/models/<file>
 ```
 
 Always address an immutable reference: a git tag for the jsDelivr `/gh/` form, an exact version for

@@ -44,7 +44,7 @@ The layout is chosen so the same relative path works whether the files are serve
 repository or from the npm package built from it. Only the base URL changes:
 
 ```
-https://cdn.jsdelivr.net/gh/sanqian2022/browserkit-models@models-v3/models/<file>
+https://cdn.jsdelivr.net/gh/sanqian2022/browserkit-models@models-v4/models/<file>
 https://registry.npmmirror.com/browserkit-models/1.3.0/files/models/<file>
 https://unpkg.com/browserkit-models@1.3.0/models/<file>
 https://cdn.jsdelivr.net/npm/browserkit-models@1.3.0/models/<file>
@@ -59,7 +59,7 @@ different revisions, which the manifest would then reject.
 1. Replace the files under `models/`, keeping parts at or below 15 MB.
 2. Regenerate `manifest.json` so the byte counts and hashes match.
 3. Bump `version` in `package.json` and `manifest.json`.
-4. Commit, push, then create and push a new tag (`models-v3`, and so on).
+4. Commit, push, then create and push a new tag (`models-v4`, and so on).
 5. Point the consuming site at the new tag or version. Old tags keep working, so a deployed site is
    never broken by an update here.
 

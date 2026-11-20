@@ -89,6 +89,100 @@
       ],
       "bytes": 4866417,
       "sha256": "1940a93ee08283a0a7286183186357b1688fe9fa8ede74604b424586aaddf112"
+    },
+    "latex-formula-ocr.encoder": {
+      "parts": [
+        {
+          "path": "models/latex-formula-ocr.encoder.part1.onnx",
+          "bytes": 14834690,
+          "sha256": "a0ef4f7bb84e92d4757ac13d17ee2595137f9a946a1b65840624b220093248ad"
+        },
+        {
+          "path": "models/latex-formula-ocr.encoder.part2.onnx",
+          "bytes": 14834690,
+          "sha256": "410d15228eac26ae719b6a53ab32bd85b8e9eb6ff7720b49e3bc2294d46b046d"
+        },
+        {
+          "path": "models/latex-formula-ocr.encoder.part3.onnx",
+          "bytes": 14834690,
+          "sha256": "411fca59e6b0177c0d01d304d6a76f6735f058872cdf477becc0c3057fa102e7"
+        },
+        {
+          "path": "models/latex-formula-ocr.encoder.part4.onnx",
+          "bytes": 14834690,
+          "sha256": "659a1be8a6b56fc534625e3064915f1416795c1fe83ee546fab15bf9ab11b7b7"
+        },
+        {
+          "path": "models/latex-formula-ocr.encoder.part5.onnx",
+          "bytes": 14834690,
+          "sha256": "522b36a6b5077781ccef73d98e63d0e2200958d2bb7120c9a50dfd76e82b0393"
+        },
+        {
+          "path": "models/latex-formula-ocr.encoder.part6.onnx",
+          "bytes": 14834686,
+          "sha256": "ab03938def6aa9fa3568a930de08aafd6241c3d7e387e15de9e38695b4bd9a45"
+        }
+      ],
+      "bytes": 89008136,
+      "sha256": "01bf5dc25539ca0cd5b1bd29296ea495977a6ba5f629dc4178277809d26e5e7d"
+    },
+    "latex-formula-ocr.decoder": {
+      "parts": [
+        {
+          "path": "models/latex-formula-ocr.decoder.part1.onnx",
+          "bytes": 12738182,
+          "sha256": "527b2dec32e8d4e76d5f50c35010ab25630aee69096aa90b51597b2aa93ad9fc"
+        },
+        {
+          "path": "models/latex-formula-ocr.decoder.part2.onnx",
+          "bytes": 12738182,
+          "sha256": "df7cf5c34bdeb9a1122e3bfd3424d1db8eba22327923665a5a366b121d38ebe7"
+        },
+        {
+          "path": "models/latex-formula-ocr.decoder.part3.onnx",
+          "bytes": 12738182,
+          "sha256": "f8d734bb5bc2df26a378f9bb29a6f5e153b21255d7252032f673ef9194b1d9ad"
+        },
+        {
+          "path": "models/latex-formula-ocr.decoder.part4.onnx",
+          "bytes": 12738180,
+          "sha256": "bb76a70057ec6585dd15f6413d47df6835d3a748c539fe03a47fcc27d9f9c1b1"
+        }
+      ],
+      "bytes": 50952726,
+      "sha256": "bd695497bf1b22279b7626f5916c79226e1e244c84355f8da7edfd2d921d0072"
+    },
+    "latex-formula-ocr.image_resizer": {
+      "parts": [
+        {
+          "path": "models/latex-formula-ocr.image_resizer.part1.onnx",
+          "bytes": 12989251,
+          "sha256": "8fef9c1e3da4fdbcbbafe4047697c9e8cb9803a7f5b1d16ee9932d3c99813247"
+        },
+        {
+          "path": "models/latex-formula-ocr.image_resizer.part2.onnx",
+          "bytes": 12989251,
+          "sha256": "f85a1f37fc06a8a7a8ac51a34373fb5a540feb9b04d31c271dfb5e8e8c55322c"
+        },
+        {
+          "path": "models/latex-formula-ocr.image_resizer.part3.onnx",
+          "bytes": 12989249,
+          "sha256": "9d96e8d2dcce0c72edf0ea28e38baf02d122696470210bca30ff519339d65d9c"
+        }
+      ],
+      "bytes": 38967751,
+      "sha256": "e0b075c39700f64d50400f39c8fc186bbb3b5d84d31864008313f376603aca9d"
+    },
+    "latex-formula-ocr.tokenizer": {
+      "parts": [
+        {
+          "path": "models/latex-formula-ocr.tokenizer.json",
+          "bytes": 24174,
+          "sha256": "1dc27b18d6a518d0d5ff3f4bb7bd98521fe80ad39e5b2a246d4109f1bb9d5019"
+        }
+      ],
+      "bytes": 24174,
+      "sha256": "1dc27b18d6a518d0d5ff3f4bb7bd98521fe80ad39e5b2a246d4109f1bb9d5019"
     }
   }
 }
